@@ -36,7 +36,7 @@ header a img {
 
 header nav {
   display: flex;
-  gap: 28px;
+  gap: 2rem;
 }
 
 header nav a {
@@ -62,12 +62,23 @@ header nav a:hover {
 }
 
 .knowledge-base-container {
+  background-color: #f4faff;
   position: absolute;
-  top: 10px;
-  height: 150px;
-  width: 150px;
-  border: 2px solid rgb(131, 191, 215);
-  display: none;
+  height: 140px;
+  width: 160px;
+  border: 3px solid #d5ecff;
+  margin-top: 1px;
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  opacity: 0;
+}
+
+.knowledge-base-link:hover ~ .knowledge-base-container {
+  opacity: 1;
 }
 
 .visit-store {
@@ -83,4 +94,14 @@ header nav a:hover {
 .visit-store:hover {
   background: linear-gradient(120deg, #9d108d, #c44794);
   color: white;
+}
+
+@media (max-width: 1056px) {
+  header nav a {
+    display: none;
+  }
+
+  .visit-store {
+    display: none;
+  }
 }
