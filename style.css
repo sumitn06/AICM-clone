@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -999;
+}
+
+header {
+  height: 22vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6vw;
+}
+
+header a img {
+  height: 3rem;
+}
+
+header nav {
+  display: flex;
+  gap: 28px;
+}
+
+header nav a {
+  color: #030903;
+  font-weight: 600;
+  transition: all 0.2 ease-in-out;
+}
+
+header nav a:hover {
+  color: #c61eb2;
+}
+
+.knowledge-base-link i {
+  transition: rotate 0.2s ease-in-out;
+}
+
+.knowledge-base-link:hover i {
+  rotate: 180deg;
+}
+
+.knowledge-base-link {
+  position: relative;
+}
+
+.knowledge-base-container {
+  position: absolute;
+  top: 10px;
+  height: 150px;
+  width: 150px;
+  border: 2px solid rgb(131, 191, 215);
+  display: none;
+}
+
+.visit-store {
+  padding: 0.9rem 1.8rem;
+  color: #030903;
+  background-color: #ffffff;
+  border-radius: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+
+.visit-store:hover {
+  background: linear-gradient(120deg, #9d108d, #c44794);
+  color: white;
+}
